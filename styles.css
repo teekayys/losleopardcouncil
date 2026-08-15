@@ -20,7 +20,11 @@ body {
   font-weight: 500;
   background: var(--cream);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* ---------- NAV ---------- */
@@ -117,8 +121,9 @@ body {
   background: var(--bg-dark);
   color: #fff;
   font-weight: 700;
-  font-size: 17px;
-  padding: 14px 28px;
+  font-size: 17.5px;
+  letter-spacing: 0.015em;
+  padding: 15px 28px;
   margin-top: 0;
 }
 .lc-block { margin-bottom: 0; }
@@ -132,8 +137,9 @@ body {
   padding-left: 22px;
 }
 .lc-list li {
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 13px;
+  font-size: 15.5px;
+  line-height: 1.75;
   font-weight: 500;
 }
 .lc-list li.lc-sub {
@@ -141,7 +147,8 @@ body {
   margin-left: -22px;
   padding-left: 18px;
   color: var(--text-soft);
-  font-size: 14px;
+  font-size: 14.5px;
+  line-height: 1.7;
   position: relative;
 }
 .lc-list li.lc-sub::before { content: "–"; position: absolute; left: 0; }
@@ -165,8 +172,9 @@ body {
   font-weight: 700;
   font-style: italic;
   color: var(--brown-dark);
-  font-size: 15.5px;
-  padding: 20px 28px 4px;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  padding: 22px 28px 6px;
 }
 .lc-empty-note {
   padding: 18px 28px;
@@ -296,7 +304,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   color: var(--text-soft);
-  background: var(--off-white);
+  background: var(--cream);
   border-bottom: 1px solid #e4dcc9;
 }
 .pgs-clear-btn {
