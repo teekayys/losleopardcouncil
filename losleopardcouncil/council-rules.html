@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>กฎระเบียบ COUNCIL - LOS LEOPARD CC</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="lc-nav">
+    <a href="index.html" class="lc-logo"><span class="lc-crest"></span> LOS LEOPARD CC</a>
+    <ul class="lc-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="council-rules.html" class="active">กฎระเบียบ COUNCIL</a></li>
+      <li><a href="story-rules.html">กฎการเล่น STORY</a></li>
+      <li><a href="gang.html">GANG</a></li>
+      <li><a href="family.html">FAMILY</a></li>
+      <li><a href="protect.html">PROTECT</a></li>
+      <li><a href="internal-rules.html">กฎภายในองค์กร</a></li>
+    </ul>
+  </nav>
+<header class="lc-banner">
+    <h1>กฎระเบียบ COUNCIL</h1>
+    <div class="lc-underline"></div>
+  </header>
+  <div class="lc-page">
+    <!-- LOS LEOPARD CC — กฎระเบียบ COUNCIL: Searchable Rules Widget
+     Paste this whole block into: Insert > Embed > Embed code, on your กฎระเบียบ COUNCIL page.
+     Self-contained: no external requests, works on a private/restricted site. -->
+<div id="lc-rules-root">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;700&display=swap');
+
+    #lc-rules-root {
+      --lc-bg: #0e0d0c;
+      --lc-brown: #8a7452;
+      --lc-brown-dark: #6f5d41;
+      --lc-cream: #f7f3ea;
+      --lc-gold: #d9b25f;
+      --lc-text: #2a251d;
+      --lc-text-soft: #6b5f4d;
+      --lc-penalty: #b23b3b;
+      --lc-void: #a3392f;
+      font-family: "Bai Jamjuree", "Noto Sans Thai", "Segoe UI", sans-serif;
+      font-weight: 500;
+      background: var(--lc-cream);
+      color: var(--lc-text);
+      width: 100%;
+      border: 1px solid #e4dcc9;
+    }
+    #lc-rules-root * { box-sizing: border-box; font-family: inherit; font-weight: inherit; }
+
+    .lc-searchbar {
+      background: var(--lc-bg);
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .lc-searchbar h2 {
+      color: var(--lc-gold);
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 0.02em;
+      font-weight: 700;
+    }
+    .lc-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .lc-input-wrap svg {
+      position: absolute;
+      left: 14px;
+      width: 18px;
+      height: 18px;
+      stroke: #8d8676;
+      pointer-events: none;
+    }
+    #lc-search-input {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      border-radius: 8px;
+      border: 1px solid #3a352c;
+      background: #1c1a16;
+      color: var(--lc-cream);
+      font-size: 15px;
+      outline: none;
+    }
+    #lc-search-input::placeholder { color: #8d8676; }
+    #lc-search-input:focus { border-color: var(--lc-gold); }
+
+    .lc-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+    }
+    .lc-tab {
+      background: none;
+      border: none;
+      color: #cfc7b3;
+      font-size: 14px;
+      padding: 6px 2px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+    }
+    .lc-tab:hover { color: var(--lc-gold); }
+    .lc-tab.active { color: var(--lc-gold); border-bottom-color: var(--lc-gold); font-weight: 600; }
+
+    .lc-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: var(--lc-text-soft);
+      background: #efe8d6;
+      border-bottom: 1px solid #e4dcc9;
+    }
+    #lc-clear-btn {
+      background: none;
+      border: none;
+      color: var(--lc-text-soft);
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 13px;
+      display: none;
+    }
+
+    .lc-results { padding: 4px 0 20px 0; }
+
+    .lc-section-header {
+      background: var(--lc-brown);
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px 24px;
+      margin-top: 18px;
+    }
+    .lc-subsection-header {
+      color: var(--lc-brown-dark);
+      font-weight: 700;
+      font-size: 14.5px;
+      padding: 14px 24px 4px 24px;
+    }
+
+    .lc-rule {
+      padding: 8px 24px 8px 46px;
+      font-size: 14.5px;
+      line-height: 1.65;
+      position: relative;
+    }
+    .lc-rule::before {
+      content: attr(data-num) ".";
+      position: absolute;
+      left: 24px;
+      color: var(--lc-brown-dark);
+      font-weight: 600;
+    }
+    .lc-rule.lc-sub {
+      padding-left: 60px;
+      font-size: 14px;
+      color: var(--lc-text-soft);
+    }
+    .lc-rule.lc-sub::before { content: "-"; left: 46px; }
+
+    .lc-penalty {
+      display: block;
+      color: var(--lc-penalty);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .lc-void { text-decoration: line-through; color: #b0a998; }
+    .lc-void .lc-penalty { color: #c98f8a; }
+
+    mark {
+      background: var(--lc-gold);
+      color: #1c1a16;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+
+    .lc-empty {
+      padding: 60px 24px;
+      text-align: center;
+      color: var(--lc-text-soft);
+      font-size: 15px;
+    }
+  </style>
+
+  <div class="lc-searchbar">
+    <h2>ค้นหากฎระเบียบ COUNCIL</h2>
+    <div class="lc-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input id="lc-search-input" type="text" placeholder="ค้นหากฎ, โทษ, หรือหมวดหมู่...">
+    </div>
+    <div class="lc-tabs" id="lc-tabs"></div>
+  </div>
+
+  <div class="lc-meta-row">
+    <span id="lc-count"></span>
+    <button id="lc-clear-btn">ล้างการค้นหา</button>
+  </div>
+
+  <div class="lc-results" id="lc-results"></div>
+</div>
+
+<script>
+(function () {
+  var DATA = [
+    { cat: "กฎระเบียบทั่วไป", rules: [
+      { text: "Gang, Family และผู้เล่นทุกคนต้องศึกษากฎและระเบียบของสภา" },
+      { text: "ธุรกรรมต่างๆจะต้องมาทำที่หน้าสภาเท่านั้น สภาไม่สามารถรับเรื่องนอกพื้นที่สภาทุกกรณี" },
+      { text: "สภาจะไม่รับพิจารณาเหตุผลในกรณีที่ผู้เล่นอ้างว่าไม่ทราบกฎ ระเบียบ ประกาศ หรือขั้นตอนการดำเนินงานของสภา" },
+      { text: "กฎ ระเบียบ และประกาศต่าง ๆ อาจมีการเปลี่ยนแปลงได้ตามความเหมาะสม โดยให้มีผลบังคับใช้ภายหลังจากประกาศอย่างเป็นทางการ" },
+      { text: "หากเกิดเหตุที่กฎของสภาไม่ครอบคลุม หรือเกิดเหตุไม่คาดคิด สภาสามารถตัดสินตามดุลพินิจของสภาได้" },
+      { text: "ห้าม เป็นพันธมิตรไม่ว่าจะเป็นการให้ความช่วยเหลือหรือได้รับการช่วยเหลือระหว่างแก๊งหรือคนนอก" },
+      { text: "คำตัดสินของบุคลากรที่ได้รับมอบหมายถือเป็นที่สิ้นสุด ทุกกรณี" }
+    ]},
+    { cat: "กฎการใช้พื้นที่สภา", sub: "กฎทั่วไป", rules: [
+      { text: "ห้าม ใช้คำพูด น้ำเสียง หรือพฤติกรรมไม่เหมาะสม ระหว่างการพูดคุย เจรจา หรือดำเนินธุรกรรมต่างๆ" },
+      { text: "ห้าม ประชาชนเข้าห้องต่างๆ ของสภาโดยไม่ได้รับอนุญาต", penalty: "ปรับ 50,000 บำเพ็ญ" },
+      { text: "ห้าม กด Emote (เมนู F3) ระหว่างการพูดคุย เจรจา STORY", penalty: "ปรับ 50,000 บำเพ็ญ" },
+      { text: "ห้าม ยั่วยุหรือด่าทอในพื้นที่สภา", penalty: "ปรับ 200,000 บำเพ็ญ" },
+      { text: "ห้าม ก่อกวนหรือสร้างความวุ่นวายในพื้นที่สภา", penalty: "ปรับ 100,000 บำเพ็ญ" },
+      { text: "ห้าม ก่อมลพิษทางเสียงในพื้นที่สภา", penalty: "ปรับ 100,000 บำเพ็ญ" }
+    ]},
+    { cat: "กฎการใช้พื้นที่สภา", sub: "การแต่งกาย", rules: [
+      { text: "Gang และ Family จำเป็นต้องใส่ชุดของกลุ่มตนเอง หากมาติดต่อหรือทำธุรกรรมที่สภา" },
+      { text: "หากไม่ใส่เครื่องแต่งกายตามที่กำหนด สภาจะไม่รับเรื่องทุกกรณี", isSub: true },
+      { text: "ห้าม ให้ใส่หน้ากากหรือเครื่องแต่งกายที่ปกปิดใบหน้า ในบริเวณพื้นที่สภาทุกกรณี", penalty: "ปรับ 30,000" }
+    ]},
+    { cat: "กฎการใช้พื้นที่สภา", sub: "ห้ามถืออาวุธหรือใช้ความรุนแรงในพื้นที่สภา", rules: [
+      { text: "ห้าม ถือหรือควักอาวุธในพื้นที่สภา", penalty: "ปรับ 50,000" },
+      { text: "ห้าม ใช้ความรุนแรง หรือก่อเหตุทำร้ายร่างกายทุกรูปแบบในพื้นที่สภา", penalty: "ปรับ 300,000 บำเพ็ญ" }
+    ]},
+    { cat: "กฎการใช้พื้นที่สภา", sub: "ยานพาหนะ", rules: [
+      { text: "ผู้มาติดต่อทำธุรกรรมที่สภาจะต้องทำการเก็บรถเข้าการจอดทุกกรณี" },
+      { text: "สภาไม่อนุญาตให้ทำการขับรถ หรือใช้ Skateboard เข้าบริเวณภายในสภาทุกกรณี", penalty: "ปรับ 100,000 บำเพ็ญ" }
+    ]},
+    { cat: "มาตรการคุ้มครองบุคลากรสภา", rules: [
+      { text: "ห้าม โพสทวิตหรือพูดจาข่มขู่ ดูหมิ่น แชะ หรือด่าทอ บุคลากร", penalty: "ปรับ 500,000 บำเพ็ญ" },
+      { text: "ห้าม ทำร้ายร่างกายบุคลากรทุกกรณี บุคลากรสามารถป้องกันตัวด้วยมาตรการสูงสุดตามดุลพินิจของบุคลากรเมื่ออยู่ในอันตราย", penalty: "ปรับ 1M + คว่ำบาตร" },
+      { text: "ห้าม ก่อกวนบุคลากรขณะปฏิบัติหน้าที่", penalty: "ปรับ 100,000" },
+      { text: "ห้ามปล้นบุคลากร", penalty: "กฎประเทศ", isVoid: true },
+      { text: "ห้าม ขโมยยานพาหนะหรือทรัพย์สินของสภา", penalty: "ปรับ 200,000 บำเพ็ญ" },
+      { text: "ห้าม แอบอ้างเป็นบุคลากร ใส่ชุดสภา เพื่อผลประโยชน์ส่วนตัว", penalty: "กฎประเทศ + ปรับ 1M บำเพ็ญ" }
+    ]},
+    { cat: "การทำธุรกรรม", rules: [
+      { text: "การติดต่อสภา หรือการทำธุรกรรมต่างๆ จะต้องทำในพื้นที่สภาเท่านั้น" },
+      { text: "ไม่อนุญาตให้ทำธุรกรรมต่างๆผ่านการโทรหาหรือข้อความหาสภาเป็นส่วนตัว ยกเว้นกรณีพิเศษที่ได้รับอนุญาต", isSub: true },
+      { text: "ห้าม ใช้ Ticket สภานอกเหนือจากจุดประสงค์ที่สภากำหนด" },
+      { text: "ห้าม เปิด Ticket เพื่อก่อกวนการทำงานของสภา" },
+      { text: "ผู้เล่นจะต้องแจ้งข้อเท็จจริงทั้งหมดเมื่อมาทำธุรกรรม" },
+      { text: "หากมีการปกปิดหรือบิดเบือนข้อเท็จจริงเพื่อผลประโยชน์ สภาสามารถยกเลิกการดำเนินการและพิจารณาทลงโทษต่อผู้ที่เกี่ยวข้องได้", isSub: true }
+    ]},
+    { cat: "การประกาศหมายเรียก", sub: "ประกาศเรียกตัว", rules: [
+      { text: "สภาจะทำการประกาศหมายเรียก 3 ครั้ง ทุกๆ 30 นาที" },
+      { text: "หากประกาศเรียกตามขั้นตอน และไม่มีการตอบรับจากผู้ที่เกี่ยวข้อง สภาสามารถประกาศ Blacklist ได้ทันที", penalty: "Blacklist 500,000" },
+      { text: "หากผู้ที่เกี่ยวข้องพยายามบ่ายเบี่ยง หรือไม่ให้ความร่วมมือกับสภา จะถือว่าไม่ให้ความร่วมมือกับทางสภา", penalty: "Blacklist 500,000" },
+      { text: "หากโดน Blacklist สภาจะไม่รับเรื่องหรือทำธุรกรรมทุกกรณี" }
+    ]}
+  ];
+
+  var categories = [];
+  DATA.forEach(function (g) { if (categories.indexOf(g.cat) === -1) categories.push(g.cat); });
+
+  var tabsEl = document.getElementById("lc-tabs");
+  var allTab = document.createElement("button");
+  allTab.className = "lc-tab active";
+  allTab.textContent = "ทั้งหมด";
+  allTab.dataset.cat = "__all__";
+  tabsEl.appendChild(allTab);
+  categories.forEach(function (c) {
+    var b = document.createElement("button");
+    b.className = "lc-tab";
+    b.textContent = c;
+    b.dataset.cat = c;
+    tabsEl.appendChild(b);
+  });
+
+  var state = { query: "", cat: "__all__" };
+  var input = document.getElementById("lc-search-input");
+  var resultsEl = document.getElementById("lc-results");
+  var countEl = document.getElementById("lc-count");
+  var clearBtn = document.getElementById("lc-clear-btn");
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; });
+  }
+  function highlight(text, q) {
+    if (!q) return escapeHtml(text);
+    var esc = escapeHtml(text);
+    var escQ = escapeHtml(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return esc.replace(new RegExp("(" + escQ + ")", "gi"), "<mark>$1</mark>");
+  }
+  function matches(rule, q) {
+    if (!q) return true;
+    var hay = (rule.text + " " + (rule.penalty || "")).toLowerCase();
+    return hay.indexOf(q.toLowerCase()) !== -1;
+  }
+
+  function render() {
+    var q = state.query.trim();
+    var groups = DATA.filter(function (g) { return state.cat === "__all__" || g.cat === state.cat; });
+
+    var html = "";
+    var total = 0;
+    var lastCat = null;
+
+    groups.forEach(function (g) {
+      var filtered = g.rules.filter(function (r) { return matches(r, q); });
+      if (filtered.length === 0) return;
+
+      if (g.cat !== lastCat) {
+        html += '<div class="lc-section-header">' + escapeHtml(g.cat) + "</div>";
+        lastCat = g.cat;
+      }
+      if (g.sub) {
+        html += '<div class="lc-subsection-header">' + escapeHtml(g.sub) + "</div>";
+      }
+
+      var num = 0;
+      filtered.forEach(function (r) {
+        total++;
+        var cls = "lc-rule" + (r.isSub ? " lc-sub" : "") + (r.isVoid ? " lc-void" : "");
+        var numAttr = "";
+        if (!r.isSub) { num++; numAttr = ' data-num="' + num + '"'; }
+        html += '<div class="' + cls + '"' + numAttr + ">";
+        html += highlight(r.text, q);
+        if (r.penalty) {
+          html += '<span class="lc-penalty">โทษ: ' + highlight(r.penalty, q) + "</span>";
+        }
+        html += "</div>";
+      });
+    });
+
+    if (total === 0) {
+      html = '<div class="lc-empty">ไม่พบผลลัพธ์ที่ตรงกับ "' + escapeHtml(q) + '"<br>ลองค้นหาด้วยคำอื่น</div>';
+    }
+
+    resultsEl.innerHTML = html;
+    countEl.textContent = q ? ("พบ " + total + " รายการ") : (total + " ข้อกำหนดทั้งหมด");
+    clearBtn.style.display = q ? "inline" : "none";
+  }
+
+  input.addEventListener("input", function () {
+    state.query = input.value;
+    render();
+  });
+  clearBtn.addEventListener("click", function () {
+    input.value = "";
+    state.query = "";
+    render();
+  });
+  tabsEl.addEventListener("click", function (e) {
+    var btn = e.target.closest(".lc-tab");
+    if (!btn) return;
+    state.cat = btn.dataset.cat;
+    Array.prototype.forEach.call(tabsEl.querySelectorAll(".lc-tab"), function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    render();
+  });
+
+  render();
+})();
+</script>
+
+  </div>
+<footer class="lc-footer">
+    <img src="assets/logo.png" alt="LOS LEOPARD COUNCIL" class="lc-footer-logo">
+    <div class="lc-footer-text">LOS LEOPARD CC — กฎระเบียบและข้อกำหนดขององค์กร</div>
+  </footer>
+</body>
+</html>
