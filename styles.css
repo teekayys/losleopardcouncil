@@ -121,16 +121,16 @@ body {
   background: var(--brown);
   color: #fff;
   font-weight: 700;
-  font-size: 17.5px;
+  font-size: 18.5px;
   letter-spacing: 0.015em;
-  padding: 15px 28px;
+  padding: 16px 42px;
   margin-top: 0;
 }
 .lc-block { margin-bottom: 0; }
 .lc-block + .lc-block { margin-top: 26px; }
 
 .lc-list {
-  padding: 18px 28px 26px;
+  padding: 20px 42px 28px;
   background: var(--cream);
 }
 .lc-list ul, .lc-list ol {
@@ -138,7 +138,7 @@ body {
 }
 .lc-list li {
   margin-bottom: 13px;
-  font-size: 15.5px;
+  font-size: 16.5px;
   line-height: 1.75;
   font-weight: 500;
 }
@@ -147,7 +147,7 @@ body {
   margin-left: -22px;
   padding-left: 18px;
   color: var(--text-soft);
-  font-size: 14.5px;
+  font-size: 15.5px;
   line-height: 1.7;
   position: relative;
 }
@@ -172,12 +172,12 @@ body {
   font-weight: 700;
   font-style: italic;
   color: var(--brown-dark);
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.01em;
-  padding: 22px 28px 6px;
+  padding: 24px 42px 6px;
 }
 .lc-empty-note {
-  padding: 18px 28px;
+  padding: 20px 42px;
   color: var(--text-soft);
   font-style: italic;
   font-weight: 500;
@@ -193,12 +193,12 @@ body {
   width: 100%;
 }
 .lc-intro h2 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 14px;
 }
 .lc-intro p {
-  font-size: 14.5px;
+  font-size: 15.5px;
   font-weight: 500;
   margin-bottom: 4px;
 }
@@ -207,9 +207,9 @@ body {
   padding: 26px 48px;
   width: 100%;
 }
-.lc-hours h3 { font-weight: 700; font-size: 17px; margin-bottom: 4px; }
-.lc-hours .lc-hours-time { font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
-.lc-hours p { font-size: 14px; font-weight: 500; font-style: italic; margin-bottom: 2px; }
+.lc-hours h3 { font-weight: 700; font-size: 18px; margin-bottom: 4px; }
+.lc-hours .lc-hours-time { font-weight: 700; font-size: 15.5px; margin-bottom: 4px; }
+.lc-hours p { font-size: 15px; font-weight: 500; font-style: italic; margin-bottom: 2px; }
 .lc-hours-group { margin-bottom: 22px; }
 
 .lc-closing {
@@ -218,7 +218,7 @@ body {
   width: 100%;
   margin: 10px auto 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 .lc-closing p { margin-bottom: 14px; }
@@ -250,7 +250,7 @@ body {
 /* ---------- PAGE SEARCH (reusable on every page except council) ---------- */
 .pgs-bar {
   background: var(--bg-dark);
-  padding: 22px 28px;
+  padding: 24px 42px;
 }
 .pgs-inner {
   display: flex;
@@ -260,7 +260,7 @@ body {
 }
 .pgs-title {
   color: var(--gold);
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
 }
 .pgs-input-wrap input {
@@ -271,7 +271,7 @@ body {
   border: 1px solid #3a352c;
   background: #1c1a16;
   color: var(--cream);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   font-family: inherit;
   outline: none;
@@ -300,7 +300,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 28px;
+  padding: 10px 42px;
   font-size: 13px;
   font-weight: 500;
   color: var(--text-soft);
