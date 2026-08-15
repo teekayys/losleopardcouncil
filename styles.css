@@ -49,6 +49,11 @@ body {
   border-radius: 50%;
   display: inline-block;
 }
+.lc-logo .lc-nav-logo {
+  height: 34px;
+  width: auto;
+  vertical-align: middle;
+}
 .lc-links {
   display: flex;
   gap: 22px;
@@ -105,9 +110,8 @@ body {
 
 /* ---------- CONTENT ---------- */
 .lc-page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 0 60px;
+  width: 100%;
+  padding: 0 48px 60px;
 }
 .lc-section-header {
   background: var(--bg-dark);
@@ -177,9 +181,8 @@ body {
 /* ---------- HOME PAGE SPECIAL BLOCKS ---------- */
 .lc-intro {
   text-align: center;
-  padding: 40px 24px 10px;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 40px 48px 10px;
+  width: 100%;
 }
 .lc-intro h2 {
   font-size: 19px;
@@ -193,9 +196,8 @@ body {
 }
 .lc-hours {
   text-align: center;
-  padding: 26px 24px;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 26px 48px;
+  width: 100%;
 }
 .lc-hours h3 { font-weight: 700; font-size: 17px; margin-bottom: 4px; }
 .lc-hours .lc-hours-time { font-weight: 700; font-size: 14.5px; margin-bottom: 4px; }
@@ -204,8 +206,8 @@ body {
 
 .lc-closing {
   border-top: 1px dashed #d9cfb5;
-  padding: 26px 24px;
-  max-width: 950px;
+  padding: 26px 48px;
+  width: 100%;
   margin: 10px auto 0;
   text-align: center;
   font-size: 14px;
@@ -235,4 +237,81 @@ body {
 @media (max-width: 720px) {
   .lc-banner h1 { font-size: 28px; }
   .lc-nav { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---------- PAGE SEARCH (reusable on every page except council) ---------- */
+.pgs-bar {
+  background: var(--bg-dark);
+  padding: 22px 48px;
+}
+.pgs-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 1100px;
+}
+.pgs-title {
+  color: var(--gold);
+  font-size: 19px;
+  font-weight: 700;
+}
+.pgs-input-wrap input {
+  width: 100%;
+  max-width: 640px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #3a352c;
+  background: #1c1a16;
+  color: var(--cream);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  outline: none;
+}
+.pgs-input-wrap input::placeholder { color: #8d8676; }
+.pgs-input-wrap input:focus { border-color: var(--gold); }
+.pgs-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+.pgs-tab {
+  background: none;
+  border: none;
+  color: #cfc7b3;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 2px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+}
+.pgs-tab:hover { color: var(--gold); }
+.pgs-tab.active { color: var(--gold); border-bottom-color: var(--gold); font-weight: 700; }
+.pgs-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 48px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-soft);
+  background: var(--off-white);
+  border-bottom: 1px solid #e4dcc9;
+}
+.pgs-clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-soft);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+}
+mark.pgs-mark {
+  background: var(--gold);
+  color: #1c1a16;
+  padding: 0 2px;
+  border-radius: 2px;
 }
