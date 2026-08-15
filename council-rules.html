@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>กฎระเบียบ COUNCIL - LOS LEOPARD CC</title>
-<link rel="stylesheet" href="styles.css?v=1786822574319">
+<link rel="stylesheet" href="styles.css?v=1786823069691">
 </head>
 <body>
 <nav class="lc-nav">
@@ -41,6 +41,7 @@
       --lc-text-soft: #6b5f4d;
       --lc-penalty: #b23b3b;
       --lc-void: #a3392f;
+      --lc-edge-pad: 58px;
       font-family: "Bai Jamjuree", "Noto Sans Thai", "Segoe UI", sans-serif;
       font-weight: 500;
       background: var(--lc-cream);
@@ -51,7 +52,7 @@
 
     .lc-searchbar {
       background: var(--lc-bg);
-      padding: 24px 38px;
+      padding: 24px var(--lc-edge-pad);
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -110,7 +111,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 38px;
+      padding: 10px var(--lc-edge-pad);
       font-size: 13px;
       color: var(--lc-text-soft);
       background: var(--lc-cream);
@@ -133,18 +134,18 @@
       color: #fff;
       font-weight: 700;
       font-size: 17px;
-      padding: 13px 38px;
+      padding: 13px var(--lc-edge-pad);
       margin-top: 18px;
     }
     .lc-subsection-header {
       color: var(--lc-brown-dark);
       font-weight: 700;
       font-size: 15.5px;
-      padding: 16px 38px 4px 38px;
+      padding-top: 16px; padding-right: var(--lc-edge-pad); padding-bottom: 4px; padding-left: var(--lc-edge-pad);
     }
 
     .lc-rule {
-      padding: 9px 38px 9px 58px;
+      padding-top: 9px; padding-right: var(--lc-edge-pad); padding-bottom: 9px; padding-left: calc(var(--lc-edge-pad) + 20px);
       font-size: 15.5px;
       line-height: 1.65;
       position: relative;
@@ -152,7 +153,7 @@
     .lc-rule::before {
       content: attr(data-num) ".";
       position: absolute;
-      left: 38px;
+      left: var(--lc-edge-pad);
       color: var(--lc-brown-dark);
       font-weight: 600;
     }
@@ -161,7 +162,7 @@
       font-size: 14px;
       color: var(--lc-text-soft);
     }
-    .lc-rule.lc-sub::before { content: "-"; left: 58px; }
+    .lc-rule.lc-sub::before { content: "-"; left: calc(var(--lc-edge-pad) + 20px); }
 
     .lc-penalty {
       display: block;

@@ -13,6 +13,10 @@
   --off-white: #efe8d6;
 }
 
+:root {
+  --edge-pad: 64px;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -123,14 +127,14 @@ body {
   font-weight: 700;
   font-size: 18.5px;
   letter-spacing: 0.015em;
-  padding: 16px 42px;
+  padding: 16px var(--edge-pad);
   margin-top: 0;
 }
 .lc-block { margin-bottom: 0; }
 .lc-block + .lc-block { margin-top: 26px; }
 
 .lc-list {
-  padding: 20px 42px 28px;
+  padding-top: 20px; padding-right: var(--edge-pad); padding-bottom: 28px; padding-left: var(--edge-pad);
   background: var(--cream);
 }
 .lc-list ul, .lc-list ol {
@@ -174,10 +178,10 @@ body {
   color: var(--brown-dark);
   font-size: 17px;
   letter-spacing: 0.01em;
-  padding: 24px 42px 6px;
+  padding-top: 24px; padding-right: var(--edge-pad); padding-bottom: 6px; padding-left: var(--edge-pad);
 }
 .lc-empty-note {
-  padding: 20px 42px;
+  padding: 20px var(--edge-pad);
   color: var(--text-soft);
   font-style: italic;
   font-weight: 500;
@@ -189,7 +193,7 @@ body {
 /* ---------- HOME PAGE SPECIAL BLOCKS ---------- */
 .lc-intro {
   text-align: center;
-  padding: 40px 48px 10px;
+  padding-top: 40px; padding-right: var(--edge-pad); padding-bottom: 10px; padding-left: var(--edge-pad);
   width: 100%;
 }
 .lc-intro h2 {
@@ -204,7 +208,7 @@ body {
 }
 .lc-hours {
   text-align: center;
-  padding: 26px 48px;
+  padding-top: 26px; padding-right: var(--edge-pad); padding-bottom: 26px; padding-left: var(--edge-pad);
   width: 100%;
 }
 .lc-hours h3 { font-weight: 700; font-size: 18px; margin-bottom: 4px; }
@@ -214,7 +218,7 @@ body {
 
 .lc-closing {
   border-top: 1px dashed #d9cfb5;
-  padding: 26px 48px;
+  padding-top: 26px; padding-right: var(--edge-pad); padding-bottom: 26px; padding-left: var(--edge-pad);
   width: 100%;
   margin: 10px auto 0;
   text-align: center;
@@ -250,7 +254,7 @@ body {
 /* ---------- PAGE SEARCH (reusable on every page except council) ---------- */
 .pgs-bar {
   background: var(--bg-dark);
-  padding: 24px 42px;
+  padding: 24px var(--edge-pad);
 }
 .pgs-inner {
   display: flex;
@@ -300,7 +304,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 42px;
+  padding: 10px var(--edge-pad);
   font-size: 13px;
   font-weight: 500;
   color: var(--text-soft);
